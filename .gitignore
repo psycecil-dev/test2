@@ -1,0 +1,13 @@
+.env
+.env.*
+!.env-sample
+*.pyc
+__pycache__/
+.venv/
+venv/
+logs/
+*.log
+.DS_Store
+.streamlit/secrets.toml
+desktop.ini
+Thumbs.db

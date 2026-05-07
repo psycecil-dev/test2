@@ -1,0 +1,37 @@
+7주차. 멀티유저/멀티세션/저장기능 챗봇
+
+#목적
+- supabase를 활용해서 멀티유저/멀티세션이 가능하고 저장이 되도록 하는 RAG 앱을 만듭니다. 
+- 기존에 만든 multi-session-ref.py를 멀티유저 버전으로 만드는 것입니다.
+
+# 파일명
+- multi-users-ref.py (이미 있으면 지우고 시작하세요)
+
+# 상세기능
+- superbase를 활용해서 멀티유저 로그인 기능 추가 (login id, password 공간 필요)
+- Supabase 을 활용해서 세션 저장/로드 기능 추가
+
+## 세션 관리 button
+- multi-session-ref.py 와 똑같습니다. 
+
+## 화면 UI 및 답변 스타일 
+- UI 와 답변, display, color 등은 ref.py, multi-session-ref.py 를 참고해주세요.
+- 챗봇 이름: "PDF 기반 멀티유저 멀티세션 RAG 챗봇" 
+
+
+# 기술 사항
+- 이 코드는 멀티 유저가 사용하므로 .env 대신에 side bar 상단 화면에서 openai, anthropic, gemini api key를 받도록해주세요
+- 테스팅이 완료가 되면 github repository에 올릴 예정임.
+- 이 기능들을 사용하기 위한  requirements.txt 을 만들어 주세요
+- 이 기능들을 streamlit cloud에서 사용하려고 합니다.  
+- Streamlit Cloud(배포용)
+- 앱 대시보드 → Settings → Secrets에 다음 키를 등록
+- SUPABASE_URL
+- SUPABASE_ANON_KEY (또는 서비스 롤 키 SUPABASE_SERVICE_ROLE_KEY)
+- 코드 수정 없이 os.getenv로 바로 읽히도록 해주세요.
+
+
+
+
+
+
